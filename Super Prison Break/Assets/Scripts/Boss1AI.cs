@@ -19,24 +19,27 @@ public class Boss1AI : MonoBehaviour
     public Transform Tpoint2;
     bool collidedT;
 
-    //Left Plaform
-    public Transform LJumpPoint;
+    //Middle Plaform
+    public GameObject MJumpPoint;
+    public GameObject MJumpPoint2;
     public Transform Lpoint1;
     public Transform Lpoint2;
     bool collidedL;
 
-    //Right Platform
-    public Transform RjumpPoint;
+    //Ground
+    public GameObject RjumpPoint;
     public Transform Rpoint1;
     public Transform Rpoint2;
     bool collidedR;
 
     float origianlMoveSpeed;
     public float moveSpeed;
+    public float jumpHeight;
+    public float jumpHeightLeft;
 
     public float phaseSwitchCheck;
     float phaseTimer;
-    int phase;
+    public int phase;
 
     float paceTimer;
 
@@ -215,7 +218,7 @@ public class Boss1AI : MonoBehaviour
                 }
             }
             // Check if closest edge is close to turn around
-            if (Mathf.Abs(closestPoint.transform.position.x - transform.position.x) < .3)
+            if (Mathf.Abs(closestPoint.transform.position.x - transform.position.x) < .3 && Mathf.Abs(closestPoint.transform.position.y - transform.position.y) < .3)
             {
                 moveSpeed *= -1;
             }
@@ -228,40 +231,125 @@ public class Boss1AI : MonoBehaviour
     }
     //Chase Player
     void Phase2()
-        // Check If boss and player are on same platform
+        
     {
-        if (collidedT && PlayerB1PlatCheck.PcollidedT  ||
-            collidedR && PlayerB1PlatCheck.PcollidedR  ||
-            collidedL && PlayerB1PlatCheck.PcollidedL  ||
-            !collidedT && PlayerB1PlatCheck.PcollidedT &&
-            !collidedR && PlayerB1PlatCheck.PcollidedR &&
-            !collidedL && PlayerB1PlatCheck.PcollidedL   )
+        Vector3 velocity = GetComponent<Rigidbody2D>().velocity;
+        velocity.x = moveSpeed;
+        GetComponent<Rigidbody2D>().velocity = velocity;
+        // Check  boss and player postions form each other
+        float yCheck = player.transform.position.y - transform.position.y;
+        float xcheck = transform.position.x - player.transform.position.x;
+        //If on same platform move towards each other
+        if (Mathf.Abs(yCheck) < .3)
         {
-            // Move Boss towards player
-            float check = transform.position.x - player.transform.position.x; 
-            if(check > 0)
+            
+            //Move Boss to player
+            if(xcheck > 0)
             {
                 moveSpeed = Mathf.Abs(moveSpeed);
-                Vector3 velocity = GetComponent<Rigidbody2D>().velocity;
-                velocity.x = moveSpeed;
-                GetComponent<Rigidbody2D>().velocity = velocity;
             }
-            else
+            if(xcheck < 0)
             {
                 moveSpeed = Mathf.Abs(moveSpeed) * -1;
-                Vector3 velocity = GetComponent<Rigidbody2D>().velocity;
-                velocity.x = moveSpeed;
-                GetComponent<Rigidbody2D>().velocity = velocity;
             }
         }
-        if (collidedL)
+        //if player above move towards closest jump point
+        else if(yCheck > .5)
         {
-
+            
+            GameObject[] Jpoints;
+            Jpoints = GameObject.FindGameObjectsWithTag("JumpPoint");
+            GameObject closestPoint = null;
+            float distance = Mathf.Infinity;
+            Vector3 position = transform.position;
+            foreach (GameObject Jpoint in Jpoints)
+            {
+                Vector3 diff = Jpoint.transform.position - position;
+                float curDistance = diff.sqrMagnitude;
+                if (curDistance < distance)
+                {
+                    closestPoint = Jpoint;
+                    distance = curDistance;
+                }
+            }
+            float JpointXCheck = closestPoint.transform.position.x - transform.position.x;
+            float JpointYCheck = closestPoint.transform.position.y - transform.position.y;
+            if (JpointXCheck < 0 && JpointYCheck < .3)
+            {
+                moveSpeed = Mathf.Abs(moveSpeed) * -1;
+            }
+            if(JpointXCheck > 0 && JpointYCheck < .3)
+            {
+                moveSpeed = Mathf.Abs(moveSpeed);
+            }
+            if (Mathf.Abs(JpointXCheck) < .3 && JpointYCheck < .3)
+            {
+                GameObject EndJump = closestPoint.transform.Find("EndJump").gameObject;
+                float EndCheck = EndJump.transform.position.x - closestPoint.transform.position.y;
+                if (EndCheck > 0)
+                {
+                    GetComponent<Rigidbody2D>().AddForce(new Vector2(100 * jumpHeightLeft, 100 * jumpHeight));
+                }
+                if(EndCheck < 0)
+                {
+                    GetComponent<Rigidbody2D>().AddForce(new Vector2(-100 * jumpHeightLeft, 100 * jumpHeight));
+                }
+            }
         }
+        //if below drop down
+        else
+        {
+            int random = Random.Range(1, 3);
+            switch (random)
+            {
+                case 1:
+                    moveSpeed = moveSpeed * -1;
+                    break;
+            }         
+        }
+        
     }
     void Phase3()
     {
-
+        //Check  boss and player postions form each other
+        Vector3 velocity = GetComponent<Rigidbody2D>().velocity;
+        velocity.x = moveSpeed;
+        GetComponent<Rigidbody2D>().velocity = velocity;
+        float yCheck = player.transform.position.y - transform.position.y;
+        float xcheck = transform.position.x - player.transform.position.x;
+        if(Mathf.Abs(yCheck) > .3)
+        {
+                if (collidedL || collidedR || collidedT)
+                {
+                    // Find closest Edge
+                    GameObject[] points;
+                    points = GameObject.FindGameObjectsWithTag("EdgePoint");
+                    GameObject closestPoint = null;
+                    float distance = Mathf.Infinity;
+                    Vector3 position = transform.position;
+                    foreach (GameObject point in points)
+                    {
+                        Vector3 diff = point.transform.position - position;
+                        float curDistance = diff.sqrMagnitude;
+                        if (curDistance < distance)
+                        {
+                            closestPoint = point;
+                            distance = curDistance;
+                        }
+                    }
+                    // Check if closest edge is close to turn around
+                    if (Mathf.Abs(closestPoint.transform.position.x - transform.position.x) < .3 && Mathf.Abs(closestPoint.transform.position.y - transform.position.y) < .3)
+                    {
+                        moveSpeed *= -1;
+                    }
+                }
+                //If hitting wall turn around
+                if (GetComponent<Rigidbody2D>().velocity.x < (.5 * moveSpeed))
+                {
+                    moveSpeed *= -1;
+                }            
+        }
+        
     }
     void Grow()
     {
