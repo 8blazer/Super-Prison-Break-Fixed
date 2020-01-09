@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -130,10 +130,10 @@ GameObject:
   m_Component:
   - component: {fileID: 188427336}
   - component: {fileID: 188427338}
-  - component: {fileID: 188427337}
   - component: {fileID: 188427341}
   - component: {fileID: 188427340}
   - component: {fileID: 188427339}
+  - component: {fileID: 188427337}
   m_Layer: 0
   m_Name: NormalTilemap
   m_TagString: Untagged
@@ -172,7 +172,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23832,10 +23832,10 @@ GameObject:
   m_Component:
   - component: {fileID: 771621004}
   - component: {fileID: 771621009}
-  - component: {fileID: 771621008}
   - component: {fileID: 771621007}
   - component: {fileID: 771621006}
   - component: {fileID: 771621005}
+  - component: {fileID: 771621008}
   m_Layer: 0
   m_Name: OffsetTilemap
   m_TagString: Untagged
@@ -24013,7 +24013,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
