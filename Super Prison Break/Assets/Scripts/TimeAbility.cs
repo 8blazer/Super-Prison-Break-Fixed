@@ -6,7 +6,7 @@ public class TimeAbility : MonoBehaviour
 {
     float timer = 0;
     bool timerGoing = false;
-    bool canSwitch = true;
+    public static float fakeTimeScale = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +17,13 @@ public class TimeAbility : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerPrefs.GetInt("CanTime") == 1 && Input.GetKeyDown("down") && Time.timeScale == 1)
+        if (PlayerPrefs.GetInt("CanTime") == 1 && Input.GetKeyDown("down"))
         {
-            Time.timeScale = .5f;
+            fakeTimeScale = .5f;
         }
-        if (PlayerPrefs.GetInt("CanTime") == 1 && Input.GetKeyDown("up") && Time.timeScale == .5f)
+        if (PlayerPrefs.GetInt("CanTime") == 1 && Input.GetKeyDown("up"))
         {
-            Time.timeScale = 1f;
+            fakeTimeScale = 1f;
         }
     }
 }
