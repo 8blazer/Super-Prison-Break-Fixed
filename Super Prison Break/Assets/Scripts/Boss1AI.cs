@@ -230,12 +230,12 @@ public class Boss1AI : MonoBehaviour
     void Phase2()
         // Check If boss and player are on same platform
     {
-        if (collidedT == PlayerB1PlatCheck.PcollidedT  ||
-            collidedR == PlayerB1PlatCheck.PcollidedR  ||
-            collidedL == PlayerB1PlatCheck.PcollidedL  ||
-            !collidedT == PlayerB1PlatCheck.PcollidedT &&
-            !collidedR == PlayerB1PlatCheck.PcollidedR &&
-            !collidedL == PlayerB1PlatCheck.PcollidedL   )
+        if (collidedT && PlayerB1PlatCheck.PcollidedT  ||
+            collidedR && PlayerB1PlatCheck.PcollidedR  ||
+            collidedL && PlayerB1PlatCheck.PcollidedL  ||
+            !collidedT && PlayerB1PlatCheck.PcollidedT &&
+            !collidedR && PlayerB1PlatCheck.PcollidedR &&
+            !collidedL && PlayerB1PlatCheck.PcollidedL   )
         {
             // Move Boss towards player
             float check = transform.position.x - player.transform.position.x; 
@@ -254,7 +254,10 @@ public class Boss1AI : MonoBehaviour
                 GetComponent<Rigidbody2D>().velocity = velocity;
             }
         }
-        if()
+        if (collidedL)
+        {
+
+        }
     }
     void Phase3()
     {
