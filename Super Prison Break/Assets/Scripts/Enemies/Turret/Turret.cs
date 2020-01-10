@@ -16,7 +16,7 @@ public class Turret : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.Rotate(0, 0, direction + 45);
+        transform.Rotate(0, 0, direction + 44);
     }
 
     // Update is called once per frame
@@ -63,7 +63,7 @@ public class Turret : MonoBehaviour
 
                     break;
 
-                case -90:  //I'm an idiot and can only get it working if the direction is 90 and now I have to move on
+                case -90:  //I'm an idiot and can only get it working if the direction is 90 or 180 and now I have to move on
 
                     if (directionString == "forward" && timerGoing == false)
                     {
@@ -97,6 +97,44 @@ public class Turret : MonoBehaviour
                             directionString = "forward";
                         }
                     }
+
+                    break;
+
+                case 180:
+
+                    if (directionString == "forward" && timerGoing == false)
+                    {
+                        if (TimeAbility.fakeTimeScale == .5f)
+                        {
+                            transform.Rotate(0, 0, .5f);
+                        }
+                        else
+                        {
+                            transform.Rotate(0, 0, 1);
+                        }
+                        if (transform.rotation.eulerAngles.z >= direction + 45)
+                        {
+                            timerGoing = true;
+                            directionString = "backward";
+                        }
+                    }
+                    else if (directionString == "backward" && timerGoing == false)
+                    {
+                        if (TimeAbility.fakeTimeScale == .5f)
+                        {
+                            transform.Rotate(0, 0, -.5f);
+                        }
+                        else
+                        {
+                            transform.Rotate(0, 0, -1);
+                        }
+                        if (transform.rotation.eulerAngles.z <= direction - 45)
+                        {
+                            timerGoing = true;
+                            directionString = "forward";
+                        }
+                    }
+
                     break;
             }
         }
@@ -130,6 +168,6 @@ public class Turret : MonoBehaviour
             }
         }
         GameObject sight = Instantiate(sightPrefab, transform.position, Quaternion.identity);
-        sight.GetComponent<Rigidbody2D>().AddForce(transform.up / 10);
+        sight.GetComponent<Rigidbody2D>().AddForce(transform.up / 12);
     }
 }

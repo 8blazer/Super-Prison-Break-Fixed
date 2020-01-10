@@ -58,7 +58,7 @@ public class PlayerMove : MonoBehaviour
         {
             moveSpeed = 5.0f;
             jumpHeight = 3.0f;
-            if (PlayerPrefs.GetFloat("Stamina") < 10 && Time.timeScale == 1)
+            if (PlayerPrefs.GetFloat("Stamina") < 10 && TimeAbility.fakeTimeScale == 1)
             {
                 PlayerPrefs.SetFloat("Stamina", PlayerPrefs.GetFloat("Stamina") + Time.deltaTime);
             }
@@ -99,21 +99,9 @@ public class PlayerMove : MonoBehaviour
                 transform.localScale = transform.localScale - new Vector3(.05f, .05f, 0);
             }
         }
-        if (Time.timeScale == .5)
+        if (TimeAbility.fakeTimeScale == .5f)
         {
             PlayerPrefs.SetFloat("Stamina", PlayerPrefs.GetFloat("Stamina") - Time.deltaTime);
-            if (PlayerPrefs.GetString("Size") == "Normal")
-            {
-                moveSpeed = 10f;
-            }
-            if (PlayerPrefs.GetString("Size") == "Large")
-            {
-                moveSpeed = 5f;
-            }
-            if (PlayerPrefs.GetString("Size") == "Small")
-            {
-                moveSpeed = 16f;
-            }
             if (PlayerPrefs.GetFloat("Stamina") < .01f)
             {
                 Time.timeScale = 1;
