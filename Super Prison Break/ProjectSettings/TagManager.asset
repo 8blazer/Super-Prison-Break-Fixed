@@ -6,8 +6,11 @@ TagManager:
   tags:
   - ground
   - Boss1TP
-  - Boss1LP
   - Boss1RP
+  - EdgePoint
+  - JumpPoint
+  - Boss1MP
+  - Wall
   layers:
   - Default
   - TransparentFX

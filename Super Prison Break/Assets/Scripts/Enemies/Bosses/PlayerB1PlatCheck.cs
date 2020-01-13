@@ -5,14 +5,14 @@ using UnityEngine;
 public class PlayerB1PlatCheck : MonoBehaviour
 {
     public static bool PcollidedT;
-    public static bool PcollidedR;
-    public static bool PcollidedL;
+    public static bool PcollidedG;
+    public static bool PcollidedM;
     // Start is called before the first frame update
     void Start()
     {
         PcollidedT = false;
-        PcollidedR = false;
-        PcollidedL = false;
+        PcollidedG = false;
+        PcollidedM = false;
     }
 
     // Update is called once per frame
@@ -27,11 +27,11 @@ public class PlayerB1PlatCheck : MonoBehaviour
             case "Boss1TP":
                 PcollidedT = true;
                 break;
-            case "Boss1LP":
-                PcollidedL = true;
+            case "Boss1MP":
+                PcollidedM = true;
                 break;
             case "Boss1RP":
-                PcollidedR = true;
+                PcollidedG = true;
                 break;
         }
     }
@@ -43,10 +43,10 @@ public class PlayerB1PlatCheck : MonoBehaviour
                 PcollidedT = false;
                 break;
             case "Boss1LP":
-                PcollidedL = false;
+                PcollidedM = false;
                 break;
             case "Boss1RP":
-                PcollidedR = false;
+                PcollidedG = false;
                 break;
         }
     }

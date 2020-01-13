@@ -13,10 +13,10 @@ public class PlayerMove : MonoBehaviour
     int jumpcount = 1;
     public int jumptest = 1;
     Animator anim;
-   // public static int hp;
-   // public static int kills;
-   // public Text health;
-   // public Text Kill;
+    // public static int hp;
+    // public static int kills;
+    // public Text health;
+    // public Text Kill;
 
     void Start()
     {
@@ -60,7 +60,7 @@ public class PlayerMove : MonoBehaviour
             jumpHeight = 3.0f;
             if (PlayerPrefs.GetFloat("Stamina") < 10 && TimeAbility.fakeTimeScale == 1)
             {
-                PlayerPrefs.SetFloat("Stamina", PlayerPrefs.GetFloat("Stamina") + Time.deltaTime);
+                PlayerPrefs.SetFloat("Stamina", PlayerPrefs.GetFloat("Stamina") + Time.deltaTime * 1.5f);
             }
             if (transform.localScale.x < .7f)
             {
@@ -78,7 +78,7 @@ public class PlayerMove : MonoBehaviour
             PlayerPrefs.SetFloat("Stamina", PlayerPrefs.GetFloat("Stamina") - Time.deltaTime);
             if (PlayerPrefs.GetFloat("Stamina") < .01f)
             {
-                PlayerPrefs.SetString("Size", "Normal"); 
+                PlayerPrefs.SetString("Size", "Normal");
             }
             if (transform.localScale.x < 1.4f)
             {
@@ -104,7 +104,7 @@ public class PlayerMove : MonoBehaviour
             PlayerPrefs.SetFloat("Stamina", PlayerPrefs.GetFloat("Stamina") - Time.deltaTime);
             if (PlayerPrefs.GetFloat("Stamina") < .01f)
             {
-                Time.timeScale = 1;
+                TimeAbility.fakeTimeScale = 1;
             }
         }
     }
@@ -143,14 +143,14 @@ public class PlayerMove : MonoBehaviour
     void OnTriggerStay2D(Collider2D collision)
     {
         //if (collision.gameObject.tag == "enemy")
-       // {
-          //  if (hp > -1)
-          //  {
-            //    hp = hp - 1;
-           // }
+        // {
+        //  if (hp > -1)
+        //  {
+        //    hp = hp - 1;
+        // }
 
 
-       // }
+        // }
         if (collision.gameObject.layer == 0)
         {
             isOnGround = true;
