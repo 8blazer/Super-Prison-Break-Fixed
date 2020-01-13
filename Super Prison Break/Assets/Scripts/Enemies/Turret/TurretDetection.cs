@@ -27,7 +27,7 @@ public class TurretDetection : MonoBehaviour
                 Turret.canSee = true;
                 Turret.timer = 0;
             }
-            else if (collision.gameObject.name != "TurretBullet")
+            else if (collision.gameObject.tag != "TurretBullet" && collision.gameObject.tag != "Turret")
             {
                 Destroy(gameObject);
             }
@@ -39,7 +39,7 @@ public class TurretDetection : MonoBehaviour
                 Turret.canSee = true;
                 Turret.timer = 0;
             }
-            else if (collision.gameObject.name != "TurretBullet")
+            else if (collision.gameObject.tag != "TurretBullet" && collision.gameObject.tag != "Turret")
             {
                 Destroy(gameObject);
             }

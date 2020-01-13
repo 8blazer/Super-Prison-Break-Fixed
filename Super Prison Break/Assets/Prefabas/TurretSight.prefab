@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5823854319166776884}
   - component: {fileID: 5823854319166776885}
   - component: {fileID: 5823854319166776842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TurretSight
-  m_TagString: Untagged
+  m_TagString: TurretBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

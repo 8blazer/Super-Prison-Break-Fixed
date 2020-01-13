@@ -8,6 +8,8 @@ TagManager:
   - Boss1TP
   - Boss1LP
   - Boss1RP
+  - TurretBullet
+  - Turret
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Turret
   - 
   - 
   - 
