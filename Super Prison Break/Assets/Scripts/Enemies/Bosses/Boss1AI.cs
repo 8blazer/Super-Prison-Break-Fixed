@@ -15,22 +15,22 @@ public class Boss1AI : MonoBehaviour
     float totalHp;
 
     //Top Platform
-    public Transform Tpoint1;
-    public Transform Tpoint2;
+    //public Transform Tpoint1;
+    //public Transform Tpoint2;
     bool collidedT;
 
     //Middle Plaform
-    public GameObject MJumpPoint;
-    public GameObject MJumpPoint2;
-    public Transform Lpoint1;
-    public Transform Lpoint2;
-    bool collidedL;
+    //public GameObject MJumpPoint;
+    //public GameObject MJumpPoint2;
+    //public Transform Lpoint1;
+    //public Transform Lpoint2;
+    bool collidedM;
 
     //Ground
-    public GameObject RjumpPoint;
-    public Transform Rpoint1;
-    public Transform Rpoint2;
-    bool collidedR;
+    //public GameObject RjumpPoint;
+    //public Transform Rpoint1;
+    //public Transform Rpoint2;
+    bool collidedG;
 
     float origianlMoveSpeed;
     public float moveSpeed;
@@ -46,14 +46,14 @@ public class Boss1AI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        collidedL = false;
-        collidedR = false;
+        collidedM = false;
+        //collidedR = false;
         collidedT = false;
         Grown = false;
         Shrunk = false;
         totalHp = hp;
         origianlMoveSpeed = moveSpeed;
-        phase = Random.Range(1, 4);
+        phase = 2;
 
     }
 
@@ -95,7 +95,7 @@ public class Boss1AI : MonoBehaviour
             switch (phase)
             {
                 case 1:
-                    phase = Random.Range(2, 4);
+                    phase = Random.Range(2, 3);
                     break;
                 case 2:
                     int random = Random.Range(1, 3);
@@ -105,7 +105,7 @@ public class Boss1AI : MonoBehaviour
                             phase = 1;
                             break;
                         case 2:
-                            phase = 3;
+                            phase = 1;
                             break;
                     }
                     break;
@@ -119,79 +119,43 @@ public class Boss1AI : MonoBehaviour
 
 
     }
-    // Check which Platdorm boss is on
-    void OnCollisionEnter2D(Collision2D collision)
+    // Check which Platform boss is on
+    void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.gameObject.tag)
         {
             case "Boss1TP":
                 collidedT = true;
                 break;
-            case "Boss1LP":
-                collidedL = true;
+            case "Boss1MP":
+                collidedM = true;
                 break;
             case "Boss1RP":
-                collidedR = true;
+                //collidedR = true;
+                break;
+            case "Wall":
+                moveSpeed *= -1;
                 break;
 
         }
     }
-    void OnCollisionExit2D(Collision2D collision)
+    void OnTriggerExit2D(Collider2D collision)
     {
         switch (collision.gameObject.tag)
         {
             case "Boss1TP":
                 collidedT = false;
                 break;
-            case "Boss1LP":
-                collidedL = false;
+            case "Boss1MP":
+                collidedM = false;
                 break;
             case "Boss1RP":
-                collidedR = false;
+                //collidedR = false;
                 break;
         }
     }
-    // Old Phase 1 code
-    void Phase11()
-    {
-        //Pace on Current Platform
-        if (collidedT)
-        {
-            Vector3 velocity = GetComponent<Rigidbody2D>().velocity;
-            velocity.x = moveSpeed;
-            GetComponent<Rigidbody2D>().velocity = velocity;
-            if (phaseTimer > 0.1f && Mathf.Abs(transform.position.x - Tpoint1.position.x) < .05 ||
-                phaseTimer > 0.1f && Mathf.Abs(transform.position.x - Tpoint2.position.x) < .05)
-            {
-                moveSpeed *= -1;
-                phaseTimer = 0;
-            }
-        }
-        if (collidedR)
-        {
-            Vector3 velocity = GetComponent<Rigidbody2D>().velocity;
-            velocity.x = moveSpeed;
-            GetComponent<Rigidbody2D>().velocity = velocity;
-            if (phaseTimer > 0.1f && Mathf.Abs(transform.position.x - Rpoint1.position.x) < .05 ||
-                phaseTimer > 0.1f && Mathf.Abs(transform.position.x - Rpoint2.position.x) < .05)
-            {
-                moveSpeed *= -1;
-                phaseTimer = 0;
-            }
-        }
-        if (collidedL)
-        {
-            Vector3 velocity = GetComponent<Rigidbody2D>().velocity;
-            velocity.x = moveSpeed;
-            GetComponent<Rigidbody2D>().velocity = velocity;
-            if (phaseTimer > 0.1f && Mathf.Abs(transform.position.x - Lpoint1.position.x) < .05 ||
-                phaseTimer > 0.1f && Mathf.Abs(transform.position.x - Lpoint2.position.x) < .05)
-            {
-                moveSpeed *= -1;
-                phaseTimer = 0;
-            }
-        }
-    }
+
+   
     // Pace anywhere
     void Phase1()
     {
@@ -199,7 +163,7 @@ public class Boss1AI : MonoBehaviour
         velocity.x = moveSpeed;
         GetComponent<Rigidbody2D>().velocity = velocity;
 
-        if (collidedL || collidedR || collidedT)
+        if (collidedM || collidedT)
         {
             // Find closest Edge
             GameObject[] points;
@@ -218,16 +182,16 @@ public class Boss1AI : MonoBehaviour
                 }
             }
             // Check if closest edge is close to turn around
-            if (Mathf.Abs(closestPoint.transform.position.x - transform.position.x) < .3 && Mathf.Abs(closestPoint.transform.position.y - transform.position.y) < .3)
+            if (Mathf.Abs(closestPoint.transform.position.x - transform.position.x) < .1 && Mathf.Abs(closestPoint.transform.position.y - transform.position.y) < .3
+                && paceTimer > .15)
             {
+                Debug.Log(paceTimer);
+                
                 moveSpeed *= -1;
+                paceTimer = 0;
             }
         }
-        //If hitting wall turn around
-        if(GetComponent<Rigidbody2D>().velocity.x < (.5 * moveSpeed))
-        {
-            moveSpeed *= -1;
-        }
+
     }
     //Chase Player
     void Phase2()
@@ -238,17 +202,19 @@ public class Boss1AI : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = velocity;
         // Check  boss and player postions form each other
         float yCheck = player.transform.position.y - transform.position.y;
+        //Debug.Log(yCheck);
         float xcheck = transform.position.x - player.transform.position.x;
-        //If on same platform move towards each other
+        Debug.Log(xcheck);
+        //If on same platform move towards player
         if (Mathf.Abs(yCheck) < .3)
         {
-            
+            Debug.Log("?");
             //Move Boss to player
-            if(xcheck > 0)
+            if(xcheck < 0)
             {
                 moveSpeed = Mathf.Abs(moveSpeed);
             }
-            if(xcheck < 0)
+            if(xcheck > 0)
             {
                 moveSpeed = Mathf.Abs(moveSpeed) * -1;
             }
@@ -297,18 +263,10 @@ public class Boss1AI : MonoBehaviour
             }
         }
         //if below drop down
-        else
-        {
-            int random = Random.Range(1, 3);
-            switch (random)
-            {
-                case 1:
-                    moveSpeed = moveSpeed * -1;
-                    break;
-            }         
-        }
+
         
     }
+    // Run from Player
     void Phase3()
     {
         //Check  boss and player postions form each other
@@ -319,7 +277,7 @@ public class Boss1AI : MonoBehaviour
         float xcheck = transform.position.x - player.transform.position.x;
         if(Mathf.Abs(yCheck) > .3)
         {
-                if (collidedL || collidedR || collidedT)
+                if (collidedM || collidedT)
                 {
                     // Find closest Edge
                     GameObject[] points;

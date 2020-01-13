@@ -19,6 +19,7 @@ public class PAttack : MonoBehaviour
     }
     void AttackS()
     {
+        
         anim.SetTrigger("attack");
 
     }
