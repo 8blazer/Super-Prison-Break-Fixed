@@ -15,5 +15,13 @@ public class StaminaBar : MonoBehaviour
     void Update()
     {
         slider.value = PlayerPrefs.GetFloat("Stamina");
+        if (PlayerPrefs.GetInt("CanGrow") == 1 || PlayerPrefs.GetInt("CanTime") == 1)
+        {
+            GetComponent<Slider>().enabled = true;
+        }
+        else
+        {
+            GetComponent<Slider>().enabled = false;
+        }
     }
 }

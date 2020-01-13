@@ -60,7 +60,7 @@ public class PlayerMove : MonoBehaviour
             jumpHeight = 3.0f;
             if (PlayerPrefs.GetFloat("Stamina") < 10 && TimeAbility.fakeTimeScale == 1)
             {
-                PlayerPrefs.SetFloat("Stamina", PlayerPrefs.GetFloat("Stamina") + Time.deltaTime);
+                PlayerPrefs.SetFloat("Stamina", PlayerPrefs.GetFloat("Stamina") + Time.deltaTime * 1.5f);
             }
             if (transform.localScale.x < .7f)
             {
@@ -104,7 +104,7 @@ public class PlayerMove : MonoBehaviour
             PlayerPrefs.SetFloat("Stamina", PlayerPrefs.GetFloat("Stamina") - Time.deltaTime);
             if (PlayerPrefs.GetFloat("Stamina") < .01f)
             {
-                Time.timeScale = 1;
+                TimeAbility.fakeTimeScale = 1;
             }
         }
     }

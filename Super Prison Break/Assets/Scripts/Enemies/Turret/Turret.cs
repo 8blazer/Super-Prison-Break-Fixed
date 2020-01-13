@@ -168,6 +168,6 @@ public class Turret : MonoBehaviour
             }
         }
         GameObject sight = Instantiate(sightPrefab, transform.position, Quaternion.identity);
-        sight.GetComponent<Rigidbody2D>().AddForce(transform.up / 12);
+        sight.GetComponent<Rigidbody2D>().AddForce(transform.up / 14);
     }
 }
