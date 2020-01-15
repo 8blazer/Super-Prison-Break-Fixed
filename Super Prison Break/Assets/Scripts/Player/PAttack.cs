@@ -14,14 +14,8 @@ public class PAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            AttackS();
+            anim.SetTrigger("attack");
         }
-    }
-    void AttackS()
-    {
-        
-        anim.SetTrigger("attack");
-
     }
     void Attack()
     {

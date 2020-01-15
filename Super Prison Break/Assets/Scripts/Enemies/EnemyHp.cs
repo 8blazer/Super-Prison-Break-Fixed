@@ -6,7 +6,7 @@ public class EnemyHp : MonoBehaviour
 {
     public int maxhealth;
     public int currentHealth = 1;
-    public AudioSource hurt;
+    //public AudioSource hurt;
     public Animator anim;
     float timer = 0f;
     bool bossdead;
@@ -43,12 +43,12 @@ public class EnemyHp : MonoBehaviour
     {
         Debug.Log("oog");
         currentHealth -= damage;
-        hurt.pitch = 1;
-        float pitch = hurt.pitch;
-        float sounddiffer = Random.Range(-.5f, .5f);
-        pitch = pitch + sounddiffer;
-        hurt.pitch = pitch;
-        hurt.Play();
+       // hurt.pitch = 1;
+        //float pitch = hurt.pitch;
+        //float sounddiffer = Random.Range(-.5f, .5f);
+        //pitch = pitch + sounddiffer;
+        //hurt.pitch = pitch;
+        //hurt.Play();
 
         if (currentHealth <= 0)
         {
@@ -59,20 +59,6 @@ public class EnemyHp : MonoBehaviour
     public void Die()
     {
         GetComponent<BoxCollider2D>().enabled = false;
-        //PlayerMovement.kills += 1;
-
-        //PlayerMovement.hp += 5;
-       // if (boss)
-       // {
-        //    timer = 0;
-       //     bossdead = true;
-        //}
-
     }
-    public void BossDie()
-    {
-        timer = 0;
-        bossdead = true;
 
-    }
 }

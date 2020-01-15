@@ -13,22 +13,22 @@ public class PlayerMove : MonoBehaviour
     int jumpcount = 1;
     public int jumptest = 1;
     Animator anim;
-    // public static int hp;
-    // public static int kills;
-    // public Text health;
-    // public Text Kill;
+    GameObject attackPoint;
+    
+    public static int hp;
+    //public Text health;
+
 
     void Start()
     {
         anim = GetComponent<Animator>();
-        //hp = 100;
+        hp = 100;
         //health.text = "HEALTH: " + hp;
-        //kills = 0;
+        attackPoint = gameObject.transform.Find("Attackpoint").gameObject;
     }
     void Update()
     {
         //health.text = "HEALTH: " + hp;
-        //Kill.text = "" + kills;
         float movex = Input.GetAxis("Horizontal");
         Vector2 velocity = GetComponent<Rigidbody2D>().velocity;
         velocity.x = movex * moveSpeed;
@@ -37,23 +37,51 @@ public class PlayerMove : MonoBehaviour
         {
             Jump();
         }
-
+        float x = Input.GetAxisRaw("Horizontal");
+        if (x == 0)
+        {
+            anim.SetInteger("x", 0);
+        }
+        else
+        {
+            anim.SetInteger("x", 1);
+        }
+        if (velocity.y > 0)
+        {
+            anim.SetInteger("y", 1);
+        }
+        else if (velocity.y < 0)
+        {
+            anim.SetInteger("y", -1);
+        }
+        else
+        {
+            anim.SetInteger("y", 0);
+        }
         if (velocity.x > 0)
         {
             Quaternion transfer = GetComponent<Transform>().rotation;
             transfer.y = 0;
             GetComponent<Transform>().rotation = transfer;
+            foreach (Transform child in transform)
+            {
+                child.localPosition = new Vector3 (Mathf.Abs(child.position.x), child.position.y, child.position.z);
+            }
         }
         if (velocity.x < 0)
         {
             Quaternion transfer = GetComponent<Transform>().rotation;
             transfer.y = -180;
             GetComponent<Transform>().rotation = transfer;
+            foreach (Transform child in transform)
+            {
+                child.localPosition = new Vector3((Mathf.Abs(child.position.x)* -1), child.position.y, child.position.z);
+            }
         }
-        //if (hp <= 0)
-        // {
-        //    anim.SetTrigger("death");
-        //}
+        if (hp <= 0)
+        {
+            anim.SetTrigger("death");
+        }
         if (PlayerPrefs.GetString("Size") == "Normal")
         {
             moveSpeed = 5.0f;
@@ -125,7 +153,7 @@ public class PlayerMove : MonoBehaviour
         }
         jump.pitch = 1;
         float pitch = jump.pitch;
-        float sounddiffer = Random.Range(-.5f, .5f);
+        float sounddiffer = Random.Range(-.6f, .7f);
         pitch = pitch + sounddiffer;
         jump.pitch = pitch;
         jump.Play();
@@ -136,25 +164,23 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.layer == 0)
         {
             isOnGround = true;
-
+            anim.SetBool("grounded", true);
             jumptest = jumpcount;
         }
     }
     void OnTriggerStay2D(Collider2D collision)
     {
-        //if (collision.gameObject.tag == "enemy")
-        // {
-        //  if (hp > -1)
-        //  {
-        //    hp = hp - 1;
-        // }
-
-
-        // }
+        if (collision.gameObject.tag == "enemy")
+        {
+          if (hp > -1)
+          {
+            hp = hp - 1;
+          }
+        }
         if (collision.gameObject.layer == 0)
         {
             isOnGround = true;
-
+            anim.SetBool("grounded", true);
             jumptest = jumpcount;
         }
     }
@@ -164,7 +190,7 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.layer == 0)
         {
             isOnGround = false;
-
+            anim.SetBool("grounded",false);
             jumptest -= 1;
         }
     }
@@ -174,7 +200,6 @@ public class PlayerMove : MonoBehaviour
     }
     public void Deathanim()
     {
-
         anim.SetTrigger("death");
     }
 }

@@ -204,11 +204,11 @@ public class Boss1AI : MonoBehaviour
         float yCheck = player.transform.position.y - transform.position.y;
         //Debug.Log(yCheck);
         float xcheck = transform.position.x - player.transform.position.x;
-        Debug.Log(xcheck);
+        
         //If on same platform move towards player
         if (Mathf.Abs(yCheck) < .3)
         {
-            Debug.Log("?");
+            
             //Move Boss to player
             if(xcheck < 0)
             {
