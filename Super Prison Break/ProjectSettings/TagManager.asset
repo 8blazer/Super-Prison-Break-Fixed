@@ -6,6 +6,12 @@ TagManager:
   tags:
   - TurretBullet
   - Turret
+  - Boss1MP
+  - EdgePoint
+  - JumpPoint
+  - ground
+  - Wall
+  - Boss1TP
   layers:
   - Default
   - TransparentFX
@@ -31,7 +37,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - enemy
   - 
   - 
   - 
