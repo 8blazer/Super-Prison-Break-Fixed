@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5342262586029658647}
   - component: {fileID: -6163960161464674378}
   - component: {fileID: -7579729128123550077}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TurretBullet
-  m_TagString: Untagged
+  m_TagString: TurretBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

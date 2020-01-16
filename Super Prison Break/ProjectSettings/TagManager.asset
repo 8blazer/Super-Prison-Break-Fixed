@@ -4,13 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - ground
-  - Boss1TP
-  - Boss1RP
-  - EdgePoint
-  - JumpPoint
-  - Boss1MP
-  - Wall
+  - TurretBullet
+  - Turret
   layers:
   - Default
   - TransparentFX
@@ -20,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - Enemy
+  - 
   - 
   - 
   - 

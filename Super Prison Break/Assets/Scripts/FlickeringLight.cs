@@ -9,12 +9,13 @@ public class FlickeringLight : MonoBehaviour
     public float maxOnTimer = 0;
     public float minOffTimer = 0;
     public float maxOffTimer = 0;
+    bool timerGoing = true;
     bool on = true;
     System.Random rnd = new System.Random();
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > minOnTimer && on)
+        if (timer > minOnTimer && timerGoing == false && on)
         {
             if (rnd.Next(1, 100) == 1)
             {
