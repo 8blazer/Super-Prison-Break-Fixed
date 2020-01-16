@@ -63,20 +63,14 @@ public class PlayerMove : MonoBehaviour
             Quaternion transfer = GetComponent<Transform>().rotation;
             transfer.y = 0;
             GetComponent<Transform>().rotation = transfer;
-            foreach (Transform child in transform)
-            {
-                child.localPosition = new Vector3 (Mathf.Abs(child.position.x), child.position.y, child.position.z);
-            }
+
         }
         if (velocity.x < 0)
         {
             Quaternion transfer = GetComponent<Transform>().rotation;
             transfer.y = -180;
             GetComponent<Transform>().rotation = transfer;
-            foreach (Transform child in transform)
-            {
-                child.localPosition = new Vector3((Mathf.Abs(child.position.x)* -1), child.position.y, child.position.z);
-            }
+
         }
         if (hp <= 0)
         {

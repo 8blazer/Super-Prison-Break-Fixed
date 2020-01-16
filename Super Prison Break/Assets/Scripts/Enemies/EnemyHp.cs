@@ -5,39 +5,19 @@ using UnityEngine;
 public class EnemyHp : MonoBehaviour
 {
     public int maxhealth;
-    public int currentHealth = 1;
+    int currentHealth = 1;
     //public AudioSource hurt;
     public Animator anim;
-    float timer = 0f;
-    bool bossdead;
-    bool boss;
-
-
-
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxhealth;
-        bossdead = false;
-        if (gameObject.name == "Boss")
-        {
-            boss = true;
-        }
-        else
-        {
-            boss = false;
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer > 5 && bossdead)
-        {
 
-            Application.Quit();
-        }
     }
     public void TakeDamage(int damage)
     {
@@ -49,7 +29,6 @@ public class EnemyHp : MonoBehaviour
         //pitch = pitch + sounddiffer;
         //hurt.pitch = pitch;
         //hurt.Play();
-
         if (currentHealth <= 0)
         {
             GetComponent<Rigidbody2D>().simulated = false;

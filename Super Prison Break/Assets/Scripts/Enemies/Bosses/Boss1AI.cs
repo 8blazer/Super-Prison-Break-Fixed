@@ -220,7 +220,7 @@ public class Boss1AI : MonoBehaviour
             }
         }
         //if player above move towards closest jump point
-        else if(yCheck > .5)
+        else if(yCheck > 1.5)
         {
             
             GameObject[] Jpoints;
