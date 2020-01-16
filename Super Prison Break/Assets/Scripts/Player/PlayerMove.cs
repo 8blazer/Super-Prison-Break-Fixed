@@ -196,4 +196,8 @@ public class PlayerMove : MonoBehaviour
     {
         anim.SetTrigger("death");
     }
+    void TakeDamage()
+    {
+
+    }
 }

@@ -1,0 +1,847 @@
+fileFormatVersion: 2
+guid: 1a4e61685b72dea4cbfeeefc3f912df4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5687889207220240337
+    second: prison gaurd_0
+  - first:
+      213: 7493058307090931741
+    second: prison gaurd_1
+  - first:
+      213: -4921118776963671394
+    second: prison gaurd_2
+  - first:
+      213: -669103913798912166
+    second: prison gaurd_3
+  - first:
+      213: 5693531812029174202
+    second: prison gaurd_4
+  - first:
+      213: 7068360247716791605
+    second: prison gaurd_5
+  - first:
+      213: -8587123105380457527
+    second: prison gaurd_6
+  - first:
+      213: -3760471749113495020
+    second: prison gaurd_7
+  - first:
+      213: -7239063978470659722
+    second: prison gaurd_8
+  - first:
+      213: 1190444421636358952
+    second: prison gaurd_9
+  - first:
+      213: -3032689122959124234
+    second: prison gaurd_10
+  - first:
+      213: 3872631785269484131
+    second: prison gaurd_11
+  - first:
+      213: -2028270657530969791
+    second: prison gaurd_12
+  - first:
+      213: -1419858414728481201
+    second: prison gaurd_13
+  - first:
+      213: 3546233019776334696
+    second: prison gaurd_14
+  - first:
+      213: 5172483346826990319
+    second: prison gaurd_15
+  - first:
+      213: 8174564794124085272
+    second: prison gaurd_16
+  - first:
+      213: -9195317232392918570
+    second: prison gaurd_17
+  - first:
+      213: 3472037624340824795
+    second: prison gaurd_18
+  - first:
+      213: 2928118155581485644
+    second: prison gaurd_19
+  - first:
+      213: -5140552879778586045
+    second: prison gaurd_20
+  - first:
+      213: -4906118355066421265
+    second: prison gaurd_21
+  - first:
+      213: -4869030200686690711
+    second: prison gaurd_22
+  - first:
+      213: -3588696518852573414
+    second: prison gaurd_23
+  - first:
+      213: 3398810434553208425
+    second: prison gaurd_24
+  - first:
+      213: -7353586787257422293
+    second: prison gaurd_25
+  - first:
+      213: 205116689794151159
+    second: prison gaurd_26
+  - first:
+      213: 5961340127106027696
+    second: prison gaurd_27
+  - first:
+      213: 5778826134738395115
+    second: prison gaurd_28
+  - first:
+      213: 4522041424869368932
+    second: prison gaurd_29
+  - first:
+      213: 7495368994545738150
+    second: prison gaurd_30
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 42
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: prison gaurd_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768a96e0970299642af7c69ef2a6bba7
+      internalID: -5687889207220240337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 244
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed508232e8ca4234e9e484ff546ac2ca
+      internalID: 7493058307090931741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 244
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8eed244e909e3547809c7f0ed4f2eb1
+      internalID: -4921118776963671394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 244
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc865c3a02141346b5d4bba3165acb3
+      internalID: -669103913798912166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 244
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167a1622fa9957e4da84f9d6dfdd221f
+      internalID: 5693531812029174202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 244
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17812ddde6acb5e408327c7c9171eeb1
+      internalID: 7068360247716791605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_6
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 244
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e4b3761bc9cf444b3ab9f80ed9b928
+      internalID: -8587123105380457527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 183
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0715dbba83b8b4c90cbb7c7f769358
+      internalID: -3760471749113495020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_8
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 183
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d4bac18b8684e41bd420b404a5adf4
+      internalID: -7239063978470659722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_9
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 183
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e44ed91987da049aee5143afcb1083
+      internalID: 1190444421636358952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_10
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 183
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea117c4cf20eac04a8ee84343a87422a
+      internalID: -3032689122959124234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 183
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7651592cecca48b469119fd0b1b022f0
+      internalID: 3872631785269484131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_12
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 183
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d292a416d22d546be9eca24f15931c
+      internalID: -2028270657530969791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_13
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 183
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1b42c6e7d4dba469476ec089eebe1d
+      internalID: -1419858414728481201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a8c6672c930fe43adab9f23d1b2693
+      internalID: 3546233019776334696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_15
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 122
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f968fafde3ef758428f46b01270f2860
+      internalID: 5172483346826990319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_16
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 122
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15e0463eb84de14ca058d22b4d9753f
+      internalID: 8174564794124085272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_17
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 122
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df9770de5ad2a449965cd70fb21bb49
+      internalID: -9195317232392918570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_18
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 122
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56010215a31cedf4f9a298f629d99c87
+      internalID: 3472037624340824795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_19
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 122
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd43dd3cf0f8964c9945da85dc5dfb8
+      internalID: 2928118155581485644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_20
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 122
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d469f8907bd96c449ae19eed55a98967
+      internalID: -5140552879778586045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 61
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a778e02882f75439b7d28ea7f451c1
+      internalID: -4906118355066421265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_22
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 61
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bd28fa200da7345ba46ddcaa050c1f
+      internalID: -4869030200686690711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_23
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 61
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6613e223b252243a4112895b7422a8
+      internalID: -3588696518852573414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_24
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 61
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2ed2771a4170c4c9023cf7e04fbe6d
+      internalID: 3398810434553208425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_25
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 61
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278246927773e2d40aeac26c2a93681c
+      internalID: -7353586787257422293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_26
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 61
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0389fd4615ab0244af078dc739fadc6
+      internalID: 205116689794151159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_27
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 61
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392b41632b85964409b4a9ed28628353
+      internalID: 5961340127106027696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6601cb56c9ef8da48a2a1d035930c2ef
+      internalID: 5778826134738395115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_29
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6805e7a7d0a5b464ba473e3b10eef2ae
+      internalID: 4522041424869368932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prison gaurd_30
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0869498fe6714e4ea1ccaa8b6f1a43d
+      internalID: 7495368994545738150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
