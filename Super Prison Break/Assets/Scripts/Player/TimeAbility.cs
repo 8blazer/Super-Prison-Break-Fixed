@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class TimeAbility : MonoBehaviour
 {
-    float timer = 0;
-    bool timerGoing = false;
     public static float fakeTimeScale = 1;
     // Start is called before the first frame update
     void Start()

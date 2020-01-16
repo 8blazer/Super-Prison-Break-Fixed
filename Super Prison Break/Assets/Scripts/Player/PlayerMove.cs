@@ -84,11 +84,11 @@ public class PlayerMove : MonoBehaviour
             {
                 PlayerPrefs.SetFloat("Stamina", PlayerPrefs.GetFloat("Stamina") + Time.deltaTime * 1.5f);
             }
-            if (transform.localScale.x < .7f)
+            if (transform.localScale.x < .9f)
             {
                 transform.localScale = transform.localScale + new Vector3(.05f, .05f, 0);
             }
-            if (transform.localScale.x > .7f)
+            if (transform.localScale.x > .9f)
             {
                 transform.localScale = transform.localScale - new Vector3(.05f, .05f, 0);
             }
@@ -102,7 +102,7 @@ public class PlayerMove : MonoBehaviour
             {
                 PlayerPrefs.SetString("Size", "Normal");
             }
-            if (transform.localScale.x < 1.4f)
+            if (transform.localScale.x < 1.6f)
             {
                 transform.localScale = transform.localScale + new Vector3(.05f, .05f, 0);
             }

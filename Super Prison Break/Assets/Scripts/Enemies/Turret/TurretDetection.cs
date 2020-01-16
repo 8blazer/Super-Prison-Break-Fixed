@@ -22,7 +22,7 @@ public class TurretDetection : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-            if (collision.gameObject.name == "Square123")
+            if (collision.gameObject.name == "Player(plz)")
             {
                 Turret.canSee = true;
                 Turret.timer = 0;
@@ -34,7 +34,7 @@ public class TurretDetection : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-            if (collision.gameObject.name == "Square123")
+            if (collision.gameObject.name == "Player(plz)")
             {
                 Turret.canSee = true;
                 Turret.timer = 0;

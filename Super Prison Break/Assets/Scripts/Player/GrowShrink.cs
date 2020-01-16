@@ -17,14 +17,6 @@ public class GrowShrink : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       /* if (PlayerPrefs.GetInt("CanGrow") == 1 && PlayerPrefs.GetFloat("Stamina") > 0 && Input.GetKey("w"))
-        {
-            PlayerPrefs.SetString("Size", "Large");
-        }
-        if (PlayerPrefs.GetInt("CanGrow") == 1 && PlayerPrefs.GetFloat("Stamina") > 0 && Input.GetKey("s"))
-        {
-            PlayerPrefs.SetString("Size", "Small");
-        }*/
         if (PlayerPrefs.GetString("Size") == "Large" && Input.GetKey("s") && canSwitch)
         {
             PlayerPrefs.SetString("Size", "Normal");
