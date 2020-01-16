@@ -37,7 +37,7 @@ public class EnemyAttack : MonoBehaviour
                 return;
             else
             {
-               Player.GetComponent<PlayerMove>().
+                Player.GetComponent<PlayerMove>().TakeDamage(Damage);
             }
         }
     }

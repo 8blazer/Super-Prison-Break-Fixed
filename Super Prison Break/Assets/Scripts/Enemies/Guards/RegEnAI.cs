@@ -25,6 +25,7 @@ public class RegEnAI : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = velocity;
         if (timer > 0.1f && Mathf.Abs(transform.position.x - point1.position.x) < .05 || timer > 0.1f && Mathf.Abs(transform.position.x - point2.position.x) < .05)
         {
+            Debug.Log("Nani");
             speed *= -1;
             timer = 0;
         }

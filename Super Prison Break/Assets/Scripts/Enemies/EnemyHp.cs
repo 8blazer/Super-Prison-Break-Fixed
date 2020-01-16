@@ -8,6 +8,7 @@ public class EnemyHp : MonoBehaviour
     int currentHealth = 1;
     //public AudioSource hurt;
     public Animator anim;
+    Vector3 velo;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,15 @@ public class EnemyHp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+         velo = GetComponent<Rigidbody2D>().velocity;
+        if(velo.x < 0)
+        {
+            anim.SetInteger("x", -1);
+        }
+        if (velo.x > 0)
+        {
+            anim.SetInteger("x", 1);
+        }
     }
     public void TakeDamage(int damage)
     {
