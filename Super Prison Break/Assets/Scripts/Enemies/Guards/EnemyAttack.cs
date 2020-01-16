@@ -37,7 +37,7 @@ public class EnemyAttack : MonoBehaviour
                 return;
             else
             {
-                anim.SetTrigger("Attack");
+               Player.GetComponent<PlayerMove>().
             }
         }
     }

@@ -192,12 +192,8 @@ public class PlayerMove : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    public void Deathanim()
+    public void TakeDamage(int damage)
     {
-        anim.SetTrigger("death");
-    }
-    void TakeDamage()
-    {
-
+        hp -= damage;
     }
 }
