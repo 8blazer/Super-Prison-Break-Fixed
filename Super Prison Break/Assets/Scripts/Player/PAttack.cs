@@ -9,7 +9,7 @@ public class PAttack : MonoBehaviour
     public float attackRange = .5f;
     public LayerMask enemyLayers;
     public static bool hasWeapon;
-    public AudioSource attack;
+   // public AudioSource attack;
     public int damage = 50;
     //Update is called once per frame
     void Update()
@@ -25,11 +25,16 @@ public class PAttack : MonoBehaviour
     }
     void Attack()
     {
-        attack.Play();
+      //  attack.Play();
         Collider2D[] hit = Physics2D.OverlapCircleAll(attackpoint.position, attackRange, enemyLayers);
         foreach (Collider2D enemy in hit)
         {
+            if (enemy == null)
+            {
+                return;
+            }
             enemy.GetComponent<EnemyHp>().TakeDamage(damage);
+
         }
     }
     private void OnDrawGizmosSelected()
