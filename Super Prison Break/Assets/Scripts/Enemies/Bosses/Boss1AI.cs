@@ -8,8 +8,8 @@ public class Boss1AI : MonoBehaviour
     bool Grown;
     bool Shrunk;
 
-    public Transform player;
-    public GameObject GOplayer;
+    Transform player;
+    GameObject GOplayer;
 
     public float hp;
     float totalHp;
@@ -43,6 +43,8 @@ public class Boss1AI : MonoBehaviour
 
     float paceTimer;
 
+    GameObject   BossExit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,12 +56,15 @@ public class Boss1AI : MonoBehaviour
         totalHp = hp;
         origianlMoveSpeed = moveSpeed;
         phase = 2;
-
+        BossExit = GameObject.FindGameObjectWithTag("BossExit");
+        GOplayer = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
+        player = GOplayer.transform;
+        Debug.Log(player.position.x);
         paceTimer += Time.deltaTime;
         phaseTimer += Time.deltaTime;
         //Grow and Shrink Activation
@@ -73,7 +78,7 @@ public class Boss1AI : MonoBehaviour
         }
         if (hp < 1 % (totalHp))
         {
-            Die();
+            
         }
         //Phase Activation
         switch (phase)
@@ -322,6 +327,6 @@ public class Boss1AI : MonoBehaviour
     }
     void Die()
     {
-
+        Destroy(BossExit);
     }
 }

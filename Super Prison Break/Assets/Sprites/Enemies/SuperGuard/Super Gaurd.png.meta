@@ -1,0 +1,1015 @@
+fileFormatVersion: 2
+guid: 65ba3b836f3fbb947b2910a934198673
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4673289267930821757
+    second: Super Gaurd_0
+  - first:
+      213: 6915616691551695023
+    second: Super Gaurd_1
+  - first:
+      213: 4556248365543617768
+    second: Super Gaurd_2
+  - first:
+      213: 580545586104650987
+    second: Super Gaurd_3
+  - first:
+      213: 1938129777790688896
+    second: Super Gaurd_4
+  - first:
+      213: 3120509800702421203
+    second: Super Gaurd_5
+  - first:
+      213: 240507808379811402
+    second: Super Gaurd_6
+  - first:
+      213: 5197832499880620943
+    second: Super Gaurd_7
+  - first:
+      213: 6336365354486275603
+    second: Super Gaurd_8
+  - first:
+      213: 2197371688485289358
+    second: Super Gaurd_9
+  - first:
+      213: -8628352459949904316
+    second: Super Gaurd_10
+  - first:
+      213: 2714110858637766965
+    second: Super Gaurd_11
+  - first:
+      213: -8196869299982556052
+    second: Super Gaurd_12
+  - first:
+      213: -6446905071226835253
+    second: Super Gaurd_13
+  - first:
+      213: -634575224116094641
+    second: Super Gaurd_14
+  - first:
+      213: 3810186641069171424
+    second: Super Gaurd_15
+  - first:
+      213: 5693866167111732966
+    second: Super Gaurd_16
+  - first:
+      213: -2380877757082062414
+    second: Super Gaurd_17
+  - first:
+      213: -5570225743276823535
+    second: Super Gaurd_18
+  - first:
+      213: -8358497773672387822
+    second: Super Gaurd_19
+  - first:
+      213: -781755975127965554
+    second: Super Gaurd_20
+  - first:
+      213: -2951637754747365848
+    second: Super Gaurd_21
+  - first:
+      213: 6148700019713148841
+    second: Super Gaurd_22
+  - first:
+      213: -5125828875030015788
+    second: Super Gaurd_23
+  - first:
+      213: 414835692475188545
+    second: Super Gaurd_24
+  - first:
+      213: -4524044202449642573
+    second: Super Gaurd_25
+  - first:
+      213: 2156595312847782166
+    second: Super Gaurd_26
+  - first:
+      213: -419681455138125286
+    second: Super Gaurd_27
+  - first:
+      213: -6148812715859818914
+    second: Super Gaurd_28
+  - first:
+      213: 6845030178582908105
+    second: Super Gaurd_29
+  - first:
+      213: 740285015188004095
+    second: Super Gaurd_30
+  - first:
+      213: -6687535666541661649
+    second: Super Gaurd_31
+  - first:
+      213: 9024059528685121242
+    second: Super Gaurd_32
+  - first:
+      213: 5479460108210940583
+    second: Super Gaurd_33
+  - first:
+      213: -1498286878500104456
+    second: Super Gaurd_34
+  - first:
+      213: 9154492287012429191
+    second: Super Gaurd_35
+  - first:
+      213: -1451522436415014782
+    second: Super Gaurd_36
+  - first:
+      213: -1434148618251824140
+    second: Super Gaurd_37
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 42
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Super Gaurd_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd3c1c31b396374a9ee43c3ba00ee82
+      internalID: -4673289267930821757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 340
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5fc9f2fcf2b03488f1591f2ff300e0
+      internalID: 6915616691551695023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 340
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dabff3b8a4f9d24d9e75fd944368aed
+      internalID: 4556248365543617768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 340
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1823b535b1c74ef4e81f2acc7fc59f1b
+      internalID: 580545586104650987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 340
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fd2f4671ed04a4a9e19c73290cf22d
+      internalID: 1938129777790688896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 340
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06593d2cfc3e634b953613482a162c2
+      internalID: 3120509800702421203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 340
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468ad88d7d4b4ed42abb0092672ee7e0
+      internalID: 240507808379811402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 340
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacc780de3500884881512b0bc3f2a00
+      internalID: 5197832499880620943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a93ee1bf1d2b541b8a06b5236e4d76
+      internalID: 6336365354486275603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_9
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 255
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9adb18407c74c4aa8642bf7261f69c
+      internalID: 2197371688485289358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 255
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a748ccafa9d0cca47b50363ae8b2b2a0
+      internalID: -8628352459949904316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_11
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 255
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4993fbca309bd57439dbd215a31c84ec
+      internalID: 2714110858637766965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 255
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528de4ed03d554c468444ab8f4d31687
+      internalID: -8196869299982556052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_13
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 255
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f42446b64ed73b4cad1673c14e98702
+      internalID: -6446905071226835253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_14
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 255
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95cd19ebfcfb6774ca497b149a162b69
+      internalID: -634575224116094641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_15
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 255
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441c4284b128e4942a806e2e96efae9d
+      internalID: 3810186641069171424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac840d39e3155ff4f93e71c53c8aac63
+      internalID: 5693866167111732966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_17
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 170
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd51a640e63430488ea1ad51ba2f473
+      internalID: -2380877757082062414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_18
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 170
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05bdec8484328344b01fe024247ee8d
+      internalID: -5570225743276823535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_19
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 170
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8598f0504854aeb4b90939afdd099f6c
+      internalID: -8358497773672387822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_20
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 170
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9480f86ba696043986a3f446fd3e07
+      internalID: -781755975127965554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_21
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 170
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc4cf640aeedb94e829c06bd71b0ae7
+      internalID: -2951637754747365848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_22
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 170
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d9ef442c2a35943a6988777e4237d5
+      internalID: 6148700019713148841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_23
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 170
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d064e916d064847af4f8217f1dbe35
+      internalID: -5125828875030015788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18cf179c59d5d034fa0ff50fec43b4f2
+      internalID: 414835692475188545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_25
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 85
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0960d86f0d06e42923c819143fbf25
+      internalID: -4524044202449642573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_26
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 85
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e78798c262a3654a909f9286c5b1d4b
+      internalID: 2156595312847782166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_27
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 85
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d789b46b3baac4ab6882cfe665bc4f
+      internalID: -419681455138125286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_28
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 85
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9650733c670e6f4a8a409fac0295c11
+      internalID: -6148812715859818914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_29
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 85
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e262af04530464286a9e0cb7d28dbb
+      internalID: 6845030178582908105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_30
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 85
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc35025e79f85d4886e25a8095c49f5
+      internalID: 740285015188004095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_31
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 85
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a8bc8bf18c3474db0f70394ad83b01
+      internalID: -6687535666541661649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b416a2c3feb0443bcbc82d0818f792
+      internalID: 9024059528685121242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_33
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c68a93f2db29c40a8f70a85c5b5fe2
+      internalID: 5479460108210940583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_34
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a035ea7d517844ba602f2e223dce9d
+      internalID: -1498286878500104456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_35
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea35112bda513a4ca9ef4baf2c0c8d1
+      internalID: 9154492287012429191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_36
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e312b59bc42a7644971a8eb15239745
+      internalID: -1451522436415014782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Super Gaurd_37
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae9f7b5f153c67499f8a1fa0372bc8e
+      internalID: -1434148618251824140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

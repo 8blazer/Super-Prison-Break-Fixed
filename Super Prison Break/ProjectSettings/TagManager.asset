@@ -13,6 +13,7 @@ TagManager:
   - Wall
   - Boss1TP
   - CellDoor
+  - BossExit
   layers:
   - Default
   - TransparentFX

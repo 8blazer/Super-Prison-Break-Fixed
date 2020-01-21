@@ -19,6 +19,8 @@ public class EnemyHp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (anim == null)
+            return;
          velo = GetComponent<Rigidbody2D>().velocity;
         if(velo.x < 0)
         {
