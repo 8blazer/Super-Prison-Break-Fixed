@@ -5,13 +5,15 @@ using UnityEngine;
 public class RegEnAI : MonoBehaviour
 {
     public float speed = 2;
+    public float regSpeed;
+    
     public Transform point1;
     public Transform point2;
     float timer = 0;
     // Start is called before the first frame update
     void Start()
     {
-
+        regSpeed = speed;
     }
 
     // Update is called once per frame
@@ -23,6 +25,8 @@ public class RegEnAI : MonoBehaviour
         Vector3 velocity = GetComponent<Rigidbody2D>().velocity;
         velocity.x = speed;
         GetComponent<Rigidbody2D>().velocity = velocity;
+        Animator anim = GetComponent<Animator>();
+        
         if (timer > 0.1f && Mathf.Abs(transform.position.x - point1.position.x) < .05 || timer > 0.1f && Mathf.Abs(transform.position.x - point2.position.x) < .05)
         {
             Debug.Log("Nani");

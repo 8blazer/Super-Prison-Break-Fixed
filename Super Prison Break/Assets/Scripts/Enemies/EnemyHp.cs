@@ -22,10 +22,16 @@ public class EnemyHp : MonoBehaviour
         if(velo.x < 0)
         {
             anim.SetInteger("x", -1);
+            GetComponent<SpriteRenderer>().flipX = false;
         }
         if (velo.x > 0)
         {
             anim.SetInteger("x", 1);
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            anim.SetInteger("x", 0);
         }
     }
     public void TakeDamage(int damage)

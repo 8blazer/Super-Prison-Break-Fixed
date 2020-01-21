@@ -25,6 +25,7 @@ public class EnemyAttack : MonoBehaviour
             else
             {
                 anim.SetTrigger("Attack");
+                GetComponent<RegEnAI>().speed = 0;
             }
         }
     }
@@ -40,6 +41,16 @@ public class EnemyAttack : MonoBehaviour
                 Player.GetComponent<PlayerMove>().TakeDamage(Damage);
             }
         }
+    }
+    void Move()
+    {
+        GetComponent<RegEnAI>().speed = GetComponent<RegEnAI>().regSpeed;
+    }
+    private void OnDrawGizmosSelected()
+    {
+        if (attackpoint == null)
+            return;
+        Gizmos.DrawWireSphere(attackpoint.position, attackRange);
     }
 
 }
