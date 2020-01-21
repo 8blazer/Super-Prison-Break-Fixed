@@ -12,6 +12,7 @@ TagManager:
   - ground
   - Wall
   - Boss1TP
+  - CellDoor
   layers:
   - Default
   - TransparentFX

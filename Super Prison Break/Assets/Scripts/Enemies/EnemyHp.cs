@@ -8,6 +8,7 @@ public class EnemyHp : MonoBehaviour
     int currentHealth = 1;
     //public AudioSource hurt;
     public Animator anim;
+    public GameObject prisonerPrefab;
     Vector3 velo;
     // Start is called before the first frame update
     void Start()
@@ -47,6 +48,11 @@ public class EnemyHp : MonoBehaviour
         if (currentHealth <= 0)
         {
             GetComponent<Rigidbody2D>().simulated = false;
+            if (this.tag == "CellDoor")
+            {
+                Instantiate(prisonerPrefab, transform.position - new Vector3(0, .5f, 0), Quaternion.identity);
+                Destroy(gameObject);
+            }
             anim.SetTrigger("death");
         }
     }
