@@ -149,11 +149,11 @@ public class Turret : MonoBehaviour
                 shootTimer = 0;
                 if (TimeAbility.fakeTimeScale == 1)
                 {
-                    bullet.GetComponent<Rigidbody2D>().AddForce(transform.up / 10);
+                    bullet.GetComponent<Rigidbody2D>().AddForce(transform.up / 60);
                 }
                 else
                 {
-                    bullet.GetComponent<Rigidbody2D>().AddForce(transform.up / 30);
+                    bullet.GetComponent<Rigidbody2D>().AddForce(transform.up / 60);
                 }
             }
         }

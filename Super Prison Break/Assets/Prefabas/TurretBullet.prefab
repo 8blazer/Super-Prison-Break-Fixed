@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5342262586029658647}
   - component: {fileID: -6163960161464674378}
   - component: {fileID: -7579729128123550077}
+  - component: {fileID: 8879984486046402051}
   m_Layer: 8
   m_Name: TurretBullet
   m_TagString: TurretBullet
@@ -119,3 +120,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1
+--- !u!114 &8879984486046402051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627759711520386211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8abbaad2bc987714d98074553a784a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

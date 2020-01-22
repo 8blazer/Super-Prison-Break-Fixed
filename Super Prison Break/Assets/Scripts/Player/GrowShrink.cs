@@ -10,8 +10,7 @@ public class GrowShrink : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("CanGrow", 1);
-        PlayerPrefs.SetFloat("Stamina", 10);  //Neither of these lines should be in the final game, just testing
+        PlayerPrefs.SetFloat("Stamina", 10);
     }
 
     // Update is called once per frame

@@ -8,7 +8,7 @@ public class TimeAbility : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetInt("CanTime", 1);
+        PlayerPrefs.SetInt("CanTime", 0);
         PlayerPrefs.SetFloat("Stamina", 10);  //Neither of these lines should be in the final game, just testing
     }
 

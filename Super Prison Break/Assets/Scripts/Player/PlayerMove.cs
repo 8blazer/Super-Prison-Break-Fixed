@@ -152,6 +152,21 @@ public class PlayerMove : MonoBehaviour
         jump.pitch = pitch;
         jump.Play();
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Level1")
+        {
+            SceneManager.LoadScene("Level2");
+        }
+        else if (collision.gameObject.name == "Level2")
+        {
+            SceneManager.LoadScene("Level3");
+        }
+        else if (collision.gameObject.name == "Level3")
+        {
+            SceneManager.LoadScene("Win");
+        }
+    }
     void OnTriggerEnter2D(Collider2D collision)
     {
 

@@ -10,7 +10,8 @@ public class CameraShake : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerPrefs.SetInt("CanGrow", 0);
+        PlayerPrefs.SetString("Size", "Normal");
     }
 
     // Update is called once per frame
