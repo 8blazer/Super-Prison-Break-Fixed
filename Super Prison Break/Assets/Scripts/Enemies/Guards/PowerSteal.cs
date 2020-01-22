@@ -16,27 +16,16 @@ public class PowerSteal : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player(plz)")
         {
             Debug.Log("foo");
-            canvas.enabled = true;
+            canvas.GetComponent<Canvas>().enabled = true;
             if (Input.GetKeyDown("e"))
             {
                 PlayerPrefs.SetInt("CanGrow", 1);
-            }
-        }
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "Player(plz)")
-        {
-            Debug.Log("foo2");
-            canvas.enabled = true;
-            if (Input.GetKeyDown("e"))
-            {
-                PlayerPrefs.SetInt("CanGrow", 1);
+                PlayerPrefs.SetInt("Stamina", 10);
             }
         }
     }
