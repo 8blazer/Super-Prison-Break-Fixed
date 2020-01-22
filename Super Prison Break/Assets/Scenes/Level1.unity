@@ -1718,6 +1718,11 @@ PrefabInstance:
       propertyPath: enemyLayers.m_Bits
       value: 16777216
       objectReference: {fileID: 0}
+    - target: {fileID: 3730650232920644679, guid: 4d22793e558f4c040844abb74da3372f,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 7455990}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d22793e558f4c040844abb74da3372f, type: 3}
 --- !u!1 &1093678563
@@ -62569,6 +62574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1801642778}
+  text: {fileID: 7455990}
 --- !u!1 &1831731391
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class GrowShrink : MonoBehaviour
 {
     float timer = 0;
     bool timerGoing = false;
     bool canSwitch = true;
+    public Text text;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,11 +32,19 @@ public class GrowShrink : MonoBehaviour
         {
             PlayerPrefs.SetString("Size", "Large");
             timerGoing = true;
+            if (SceneManager.GetActiveScene().name == "Level1" && text.text == "W + S to grow and shrink")
+            {
+                text.text = "";
+            }
         }
         else if (PlayerPrefs.GetInt("CanGrow") == 1 && PlayerPrefs.GetFloat("Stamina") > 0 && Input.GetKey("s") && canSwitch)
         {
             PlayerPrefs.SetString("Size", "Small");
             timerGoing = true;
+            if (SceneManager.GetActiveScene().name == "Level1" && text.text == "W + S to grow and shrink")
+            {
+                text.text = "";
+            }
         }
         if (timerGoing)
         {

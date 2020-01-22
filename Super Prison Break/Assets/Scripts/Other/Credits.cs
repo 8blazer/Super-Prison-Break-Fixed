@@ -10,6 +10,7 @@ public class Credits : MonoBehaviour
     public Text second;
     public Text third;
     List<string> nameOrder = new List<string>();
+    float timer = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,10 @@ public class Credits : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        timer += Time.deltaTime;
+        if (timer > 20)
+        {
+            Application.Quit();
+        }
     }
 }

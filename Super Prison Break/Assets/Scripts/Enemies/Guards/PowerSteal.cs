@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class PowerSteal : MonoBehaviour
 {
     public Canvas canvas;
+    public Text text;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class PowerSteal : MonoBehaviour
             {
                 PlayerPrefs.SetInt("CanGrow", 1);
                 PlayerPrefs.SetInt("Stamina", 10);
+                text.text = "W + S to grow and shrink";
             }
         }
     }
